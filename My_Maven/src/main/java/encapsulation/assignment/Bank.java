@@ -40,15 +40,7 @@ public class Bank {
 
 	public void validate(int apin)
 	{
-		if(apin==getAtmpin1())
-		{
-			System.out.println("Welcome "+getName());
-		}
-		else if(apin==getAtmpin2())
-		{
-			System.out.println("Welcome "+getName());
-		}
-		else if(apin==getAtmpin3())
+		if(apin==getAtmpin1()||apin==getAtmpin2()||apin==getAtmpin3()) 
 		{
 			System.out.println("Welcome "+getName());
 		}

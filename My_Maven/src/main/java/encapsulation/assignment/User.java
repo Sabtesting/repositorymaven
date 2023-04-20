@@ -14,8 +14,7 @@ public class User {
 		usrName=sc.nextLine();
 		System.out.println("Enter your atmpin");
 		pin=sc.nextInt();
-		
-		
+				
 		obj.setAtmpin1(1001);
 		obj.setAtmpin2(1234);
 		obj.setAtmpin3(1212);
