@@ -1,44 +1,63 @@
 package encapsulation.assignment;
 
-import java.util.Scanner;
-
 public class Bank {
 	
-	private int atmpin;
-	private float amount;
-
-	public float getAmount() {
-		return amount;
+	private String name;
+	private int atmpin1;
+	private int atmpin2;
+	private int atmpin3;
+	
+	public String getName() {
+		return name;
 	}
-
-	public void setAmount(float amount) {
-		this.amount = amount;
-	}
-
-	public int getAtmpin() {
-		return atmpin;
-	}
-
-	public void setAtmpin(int atmpin) {
-		this.atmpin = atmpin;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
-	public void validate()
+	public int getAtmpin1() {
+		return atmpin1;
+	}
+	public void setAtmpin1(int atmpin1) {
+		this.atmpin1 = atmpin1;
+	}
+
+
+	public int getAtmpin2() {
+		return atmpin2;
+	}
+	public void setAtmpin2(int atmpin2) {
+		this.atmpin2 = atmpin2;
+	}
+
+
+	public int getAtmpin3() {
+		return atmpin3;
+	}
+	public void setAtmpin3(int atmpin3) {
+		this.atmpin3 = atmpin3;
+	}
+
+
+	public void validate(int apin)
 	{
-		int pin;
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the Atm Pin");
-		pin=sc.nextInt();
-		if(pin==atmpin)
+		if(apin==getAtmpin1())
 		{
-			System.out.println("Enter the Amount to withdraw: ");
+			System.out.println("Welcome "+getName());
+		}
+		else if(apin==getAtmpin2())
+		{
+			System.out.println("Welcome "+getName());
+		}
+		else if(apin==getAtmpin3())
+		{
+			System.out.println("Welcome "+getName());
 		}
 		else
 		{
-			System.out.println("Incorrect pin");
-			System.out.println("Enter the valid pin");
+			System.out.println("Entered pin is incorrect");
 		}
-	}
+		
+		}
 	
 
 }
